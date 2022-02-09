@@ -50,11 +50,19 @@ body {
   text-align: left;
   color: var(--mine-shaft);
   max-width: 1920px;
-  background-color: var(--mercury);
+  background-color: var(--white);
 }
 
 .container {
   padding: 0 160px;
+}
+
+.content {
+  margin-bottom: 80px;
+}
+
+.content__section:not(:last-child) {
+  margin-bottom: 80px;
 }
 
 
@@ -134,7 +142,7 @@ body {
 .header {
   background-image: url(../img/banner/1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -445,4 +453,17 @@ body {
 
 .hero__subtitle {
   margin-bottom: 92px;
+}
+
+/*--about--*/
+.about {
+  /*outline: 1px solid red;*/
+}
+
+.about__info {
+  max-width: 1080px;
+}
+
+.about__title {
+  margin-bottom: 17px;
 }
