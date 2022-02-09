@@ -16,11 +16,11 @@
 
 <body>
   <header class="header">
-    <div class="header__top container">
-      <a class="header__logo logo" href="#">
+    <div class="header-top container">
+      <a class="header-top__logo logo" href="#">
         <img class="logo-img" src="img/logo.svg" alt="Логотип">
       </a>
-      <nav class="header__nav nav">
+      <nav class="header-top__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#" class="nav__link link link--nav" tabindex="#" aria-label="О нас">О нас</a>
@@ -45,7 +45,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="header__login link">
+      <a href="#" class="header-top__login link">
         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
@@ -55,54 +55,136 @@
       </a>
     </div>
 
-    <div class="header__bottom container">
-      <ul class="header__menu menu">
+    <div class="header-bottom container">
+      <ul class="header-bottom__menu menu">
         <li class="menu__item">
-          <button class="menu__btn btn btn--nav">
+          <button class="menu__btn btn" data-path="one">
             Реализм
           </button>
-          <ul>
-
+          <ul class="menu__dropdown-menu dropdown-menu " data-target="one" data-simplebar>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Тинторетто</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">Фридрих</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-third" tabindex="">
+              <a href="#" class="dropdown-menu__content">Леонардо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Верроккьо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
           </ul>
         </li>
         <li class="menu__item">
-          <button class="menu__btn btn btn--nav">
+          <button class="menu__btn btn" data-path="two">
             Импрессионизм
           </button>
-          <ul>
-            <li></li>
+          <ul class="menu__dropdown-menu dropdown-menu" data-target="two" data-simplebar>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Тинторетто</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">Фридрих</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-third" tabindex="">
+              <a href="#" class="dropdown-menu__content">Леонардо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Верроккьо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
           </ul>
         </li>
         <li class="menu__item">
-          <button class="menu__btn btn btn--nav">
+          <button class="menu__btn btn" data-path="tree">
             Постимпрессионизм
           </button>
-          <ul>
-            <li></li>
+          <ul class="menu__dropdown-menu dropdown-menu" data-target="tree" data-simplebar>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Тинторетто</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">Фридрих</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-third" tabindex="">
+              <a href="#" class="dropdown-menu__content">Леонардо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Верроккьо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
           </ul>
         </li>
         <li class="menu__item">
-          <button class="menu__btn btn btn--nav">
+          <button class="menu__btn btn" data-path="four">
             Авангард
           </button>
-          <ul>
-            <li></li>
+          <ul class="menu__dropdown-menu dropdown-menu" data-target="four" data-simplebar>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Тинторетто</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">Фридрих</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-third" tabindex="">
+              <a href="#" class="dropdown-menu__content">Леонардо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Верроккьо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
           </ul>
         </li>
         <li class="menu__item">
-          <button class="menu__btn btn btn--nav">
+          <button class="menu__btn btn" data-path="five">
             Футуризм
           </button>
-          <ul>
-            <li></li>
+          <ul class="menu__dropdown-menu dropdown-menu" data-target="five" data-simplebar>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Тинторетто</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">Фридрих</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-third" tabindex="">
+              <a href="#" class="dropdown-menu__content">Леонардо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
+              <a href="#" class="dropdown-menu__content">Верроккьо</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
+              <a href="#" class="dropdown-menu__content">test</a>
+            </li>
           </ul>
         </li>
       </ul>
-
-
-
-      <form class="header__search">
-        <button class="header__search-btn btn" type="submit" aria-label="Кнопка поиск" tabindex="500">
+      <form class="header-bottom__search search">
+        <button class="search__btn btn" type="submit" aria-label="Кнопка поиск" tabindex="500">
           <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="6.8678" height="1.71695"
               transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
@@ -111,39 +193,26 @@
               fill="white" />
           </svg>
         </button>
-        <input class="input-search" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
+        <input class="search__input" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
       </form>
     </div>
 
-    <ul class="menu__dropdown-menu dropdown-menu" data-simplebar>
-      <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
-        <a href="#" class="dropdown-menu__content">Тинторетто</a>
-      </li>
-      <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
-        <a href="#" class="dropdown-menu__content">Фридрих</a>
-      </li>
-      <li class="dropdown-menu__item dropdown-menu__item--img-third" tabindex="">
-        <a href="#" class="dropdown-menu__content">Леонардо</a>
-      </li>
-      <li class="dropdown-menu__item dropdown-menu__item--img-last" tabindex="">
-        <a href="#" class="dropdown-menu__content">Верроккьо</a>
-      </li>
-      <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
-        <a href="#" class="dropdown-menu__content">test</a>
-      </li>
-      <li class="dropdown-menu__item dropdown-menu__item--img-second" tabindex="">
-        <a href="#" class="dropdown-menu__content">test</a>
-      </li>
+    <div class="hero container">
+      <div class="hero__content">
+        <h2 class="hero__title title title--big title--light">Прикоснитесь к&nbsp;прекрасному</h2>
+        <p class="hero__subtitle subtitle">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных
+          плановых заданий создаёт предпосылки для новых предложений.</p>
+        <button class="hero__btn btn btn--purple">Подписаться на&nbsp;рассылку</button>
+      </div>
+    </div>
 
-
-    </ul>
 
 
   </header>
 
 
 
-
+  <script src="js/menu.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 
