@@ -73,6 +73,12 @@ body {
   color: var(--mine-shaft);
 }
 
+.title--big {
+  font-size: 72px;
+  line-height: 83px;
+  font-weight: 700;
+}
+
 .title--small {
   font-size: 24px;
   line-height: 32px;
@@ -80,11 +86,7 @@ body {
   color: var(--mine-shaft);
 }
 
-.title--big {
-  font-size: 72px;
-  line-height: 83px;
-  font-weight: 700;
-}
+
 
 .title--light {
   color: var(--white)
@@ -466,4 +468,31 @@ body {
 
 .about__title {
   margin-bottom: 17px;
+}
+
+/*---gallery---*/
+.gallery {
+  outline: 1px solid red;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /*padding: 80px 160px;*/
+  background-image: url(../img/banner/gallery.jpg);
+}
+
+.gallert__contant {
+  display: flex;
+}
+
+.gallery__left {
+  width: 400px;
+}
+
+.gallery__title {
+  margin-bottom: 15px;
+}
+
+.filter__title {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
 }

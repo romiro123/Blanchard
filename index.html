@@ -10,6 +10,7 @@
   <!--<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>-->
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -205,9 +206,9 @@
     </div>
   </header>
 
-  <main class="container content">
+  <main class="content">
 
-    <section class="about content__section">
+    <section class="about container content__section">
       <div class="about__info">
         <h2 class="about__title title">
           О нас
@@ -222,11 +223,34 @@
           быть разоблачены.</p>
       </div>
     </section>
+
+    <section class="gallery container content__section">
+      <div class="gallert__contant">
+        <div class="gallery__left">
+          <h2 class="gallery__title title title--light">Галерея</h2>
+          <div class="gallery__body">
+            <div class="gallery__filter filter">
+              <span class="filter__title title--light">Фильтр:</span>
+              <select name="material" id="material">
+                <option value="">Живопись</option>
+                <option>Рисунок</option>
+                <option>Скульптура</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__right"></div>
+      </div>
+    </section>
+
   </main>
 
 
 
   <script src="js/menu.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/choices.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 
