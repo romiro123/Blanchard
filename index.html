@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="icon" href="img/icon/favicon.ico">
-  <!--<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -240,7 +240,37 @@
           </div>
         </div>
 
-        <div class="gallery__right"></div>
+        <div class="gallery__slider">
+          <div class="gallery__nav gallery-nav">
+            <div class="swiper-button-prev swiper-button-prev--gallery"></div>
+            <div class="swiper-pagination swiper-pagination--gallery swiper-pagination-fraction--gallery"></div>
+            <div class="swiper-button-next swiper-button-next--gallery"></div>
+          </div>
+          <div class="swiper swiper--gallery ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="slide-img" src="/img/gallery/350x350/1.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="/img/gallery/350x350/2.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="/img/gallery/350x350/3.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="/img/gallery/350x350/4.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="/img/gallery/350x350/5.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="slide-img" src="/img/gallery/350x350/6.jpg">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </section>
 
@@ -251,6 +281,8 @@
   <script src="js/menu.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/choices.js"></script>
+  <script src="js/gallery.js"></script>
+
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 
