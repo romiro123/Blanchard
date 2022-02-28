@@ -298,32 +298,52 @@
           частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
           уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
       </div>
-      <div class="catalog-content">
+      <div class="catalog__content card">
 
-        <div class="person-card person">
+        <div class="card__person person person--active" data-target="one">
           <img class="person__img img" src="img/catalog/person.jpg">
           <h3 class="person__title title title--small">Доменико Гирландайо</h3>
           <span class="pepson__date subtitle subtitle--small">2 июня 1448 — 11 января 1494.</span>
           <p>
-            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+            продолжили
             его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
             овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
-            подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции
+            подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
+            Флоренции
             в костюмах того времени).
           </p>
         </div>
 
         <ul class="accordion">
-          <li>
-            <button class="btn">
-              <p class="title title--small">C 1400 по 1499 гг.</p>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 1400 по 1499 гг.</p>
             </button>
             <div class="ui-accordion-content">
-              <p class="ui-accordion-content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorem eius alias sequi consequatur. Obcaecati pariatur saepe sit dolores asperiores inventore,
-                sapiente
-                perferendis tempora quisquam suscipit fugit deserunt nostrum quo? Consequatur!
-              </p>
+              <ul class="ui-accordion-content-text">
+                <li>
+                  <button class="btn" data-path="one">Бенедетто ди Биндо</button>
+                </li>
+                <li>
+                  <button class="btn btn--person">Бергоньоне, Амброджо</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 1400 по 1499 гг.</p>
+            </button>
+            <div class="ui-accordion-content">
+              <ul class="ui-accordion-content-text">
+                <li>
+                  <button class="btn">Бенедетто ди Биндо</button>
+                </li>
+                <li>
+                  <button class="btn">Бергоньоне, Амброджо</button>
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
