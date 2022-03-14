@@ -652,7 +652,7 @@ body {
 
 }
 
-.person--active {
+.person-ac {
   display: block;
 }
 
@@ -666,7 +666,6 @@ body {
 }
 
 .pepson__live {}
-
 
 /*----------------*/
 
@@ -773,3 +772,8 @@ body {
 .ui-accordion-content-text:not(:last-child) {
   margin-bottom: 40px;
 }*/
+
+/*---tab---*/
+.btn-person-active {
+  color: #7943A4;
+}

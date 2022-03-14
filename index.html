@@ -300,9 +300,23 @@
       </div>
       <div class="catalog__content card">
 
-        <div class="card__person person person--active" data-target="one">
+        <div class="card__person person " data-target="test1">
           <img class="person__img img" src="img/catalog/person.jpg">
           <h3 class="person__title title title--small">Доменико Гирландайо</h3>
+          <span class="pepson__date subtitle subtitle--small">2 июня 1448 — 11 января 1494.</span>
+          <p>
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+            продолжили
+            его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
+            овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
+            подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
+            Флоренции
+            в костюмах того времени).
+          </p>
+        </div>
+        <div class="card__person person person-ac" data-target="test2">
+          <img class="person__img img" src="img/catalog/default.jpg">
+          <h3 class="person__title title title--small">Do Do</h3>
           <span class="pepson__date subtitle subtitle--small">2 июня 1448 — 11 января 1494.</span>
           <p>
             Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
@@ -320,45 +334,122 @@
             <button class="btn btn--accordion">
               <p class="accordion__title title title--small">C 1400 по 1499 гг.</p>
             </button>
-            <div class="ui-accordion-content">
-              <ul class="ui-accordion-content-text">
-                <li>
-                  <button class="btn" data-path="one">Бенедетто ди Биндо</button>
-                </li>
-                <li>
-                  <button class="btn btn--person">Бергоньоне, Амброджо</button>
-                </li>
-              </ul>
-            </div>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn btn-person " data-path="test1">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn btn-person btn-person-active" data-path="test2">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--small">C 1400 по 1499 гг.</p>
+              <p class="accordion__title title title--small">C 1500 по 1599 гг.</p>
             </button>
-            <div class="ui-accordion-content">
-              <ul class="ui-accordion-content-text">
-                <li>
-                  <button class="btn">Бенедетто ди Биндо</button>
-                </li>
-                <li>
-                  <button class="btn">Бергоньоне, Амброджо</button>
-                </li>
-              </ul>
-            </div>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
+          </li>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 1600 по 1699 гг.</p>
+            </button>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
+          </li>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 1700 по 1799 гг.</p>
+            </button>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
+          </li>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 1800 по 1899 гг.</p>
+            </button>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
+          </li>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 1900 по 1999 гг.</p>
+            </button>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
+          </li>
+          <li class="accordion__item">
+            <button class="btn btn--accordion">
+              <p class="accordion__title title title--small">C 2000 г.</p>
+            </button>
+
+            <ul class="ui-accordion-content ui-accordion-content-text">
+              <li>
+                <button class="btn">Бенедетто ди Биндо</button>
+              </li>
+              <li>
+                <button class="btn">Бергоньоне, Амброджо</button>
+              </li>
+            </ul>
+
           </li>
         </ul>
+
       </div>
     </section>
 
   </main>
 
 
-
+  <script src="js/tabs.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/choices.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/accordion.js"></script>
+
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
