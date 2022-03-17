@@ -1,8 +1,7 @@
-const swiper = new Swiper('.swiper--gallery', {
+const swiperGallery = new Swiper('.swiper--gallery', {
 
     slideLabelMessage: false,
     // Optional parameters
-    loop: true,
     slidesPerGroup: 3,
     slidesPerView: 3,
     spaceBetween: 50,
@@ -15,8 +14,8 @@ const swiper = new Swiper('.swiper--gallery', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next--gallery',
+        prevEl: '.swiper-button-prev--gallery',
     },
 
 

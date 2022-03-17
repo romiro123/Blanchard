@@ -1,6 +1,6 @@
 $(function () {
     $('.accordion').accordion({
-        active: true,
+        active: 0,
         icons: false,
         collapsible: true,
         heightStyle: "content",
