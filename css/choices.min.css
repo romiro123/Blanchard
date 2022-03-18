@@ -97,13 +97,16 @@
   margin-top: -2.5px;
   pointer-events: none;
   z-index: 6;
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
 }
 
 .choices[data-type*=select-one].is-open:after {
   /*border-color: transparent transparent rgb(49, 2, 219);*/
   /*стрелка закрыть
   margin-top: -7.5px*/
-  background-image: url(../img/icon/choises-arrow.svg);
+  /*background-image: url(../img/icon/choises-arrow.svg);*/
+  transform: rotate(180deg);
 }
 
 .choices[data-type*=select-one][dir=rtl]:after {

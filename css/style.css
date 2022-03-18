@@ -51,12 +51,15 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--mine-shaft);
-  max-width: 1920px;
+  /*max-width: 1920px;*/
   background-color: var(--white);
 }
 
 .container {
   padding: 0 160px;
+
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .content {
@@ -139,6 +142,14 @@ body {
   background-color: var(--royal-purple);
 }
 
+.btn--form {
+  color: #9D5CD0;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+  padding: 10px 30px;
+}
 
 .link {
   font-size: 18px;
@@ -239,10 +250,21 @@ body {
   background-position: center;
 }
 
+/*
 .header-top {
   display: flex;
   align-items: center;
   background-color: var(--black);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
+.header-top {
+  background-color: var(--black);
+}
+
+.header-top__container {
+  display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -308,12 +330,16 @@ body {
 }
 
 .header-bottom {
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-bottom__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 23px;
   padding-bottom: 21px;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .menu {
@@ -560,7 +586,7 @@ body {
   background-image: url(../img/gallery/gallery.jpg);
 }
 
-.gallert__contant {
+.gallert__container {
   display: flex;
 }
 
@@ -602,8 +628,6 @@ body {
 
 .swiper-button-next--gallery, .swiper-button-prev--gallery {
   position: static;
-  display: flex;
-  align-items: center;
   width: 30px;
   height: 30px;
   background-color: var(--dove-gray);
@@ -916,8 +940,6 @@ body {
 }
 
 .swiper-button-next--events, .swiper-button-prev--events {
-  display: flex;
-  align-items: center;
   width: 50px;
   height: 50px;
   background-color: #ECECEC;
@@ -961,6 +983,11 @@ body {
 /*---project---*/
 .project__info {
   max-width: 1058px;
+  margin-bottom: 30px;
+}
+
+.project__subtitle {
+  margin-bottom: 23px;
 }
 
 .tooltip {
@@ -1023,8 +1050,6 @@ body {
   /*padding: 0 75px;*/
 }
 
-
-
 .swiper-button-prev--project,
 .swiper-button-next--project {
   position: absolute;
@@ -1041,22 +1066,21 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #CACACA;
-  filter: grayscale(1);
-  opacity: 0.3;
-  transition: .2s ease-in-out;
   height: 150px;
   /*background-color: #666666;*/
 }
 
-.tr {
-  /*display: block;*/
+.img--project {
+  display: block;
   object-fit: contain;
-  width: 100%;
-  height: 100%;
-  padding: 25px 50px;
+  width: 65%;
+  height: 65%;
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition: .2s ease-in-out;
 }
 
-.project__item:hover {
+.img--project:hover {
   opacity: 1;
   filter: grayscale(0);
 }
@@ -1064,5 +1088,94 @@ body {
 .project__item:focus {
   border: 1px solid #9D5CD0;
   outline: none;
+}
 
+.swiper-button-prev--project,
+.swiper-button-next--project {
+  width: 30px;
+  height: 30px;
+  background-color: #ECECEC;
+  border: 2px solid transparent;
+  border-radius: 30px;
+}
+
+.swiper-button-prev--project {
+  left: 0;
+}
+
+.swiper-button-next--project {
+  right: 0;
+}
+
+.swiper-button-next--project::after, .swiper-button-prev--project::after {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--black);
+}
+
+.swiper-button-next--project:hover, .swiper-button-prev--project:hover {
+  background-color: #D1A9F0;
+}
+
+.swiper-button-next--project:focus, .swiper-button-prev--project:focus {
+  outline: 2px solid #9D5CD0;
+}
+
+
+/*---contacts---*/
+.contacts {
+  border: 1px solid #CACACA;
+  padding: 40px 0;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-form {
+  height: 50px;
+  width: 270px;
+  background: #FFFFFF;
+  border: 1px solid #333333;
+  border-radius: 100px;
+  padding-left: 25px;
+}
+
+.item-form:not(:last-child) {
+  margin-right: 20px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+
+}
+
+.map {
+  width: 100%;
+  height: 700px;
+}
+
+
+/*---footer---*/
+.footer {
+  background-color: #000;
+  padding: 45px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
