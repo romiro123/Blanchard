@@ -1,4 +1,15 @@
-const swiperGallery = new Swiper('.swiper--gallery', {
+let swiperHeader = new Swiper(".swiper--header", {
+    allowTouchMove: false,
+    effect: 'fade',
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    }
+
+});
+
+
+let swiperGallery = new Swiper('.swiper--gallery', {
 
     slideLabelMessage: false,
     // Optional parameters

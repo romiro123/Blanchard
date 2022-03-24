@@ -1,28 +1,46 @@
+const params = {
+    btnClassName: "menu__btn",
+    dropClassName: "dropdown-menu",
+    activeClassName: "active",
+    disabledClassName: "disabled"
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.menu__btn').forEach(function (menuBtn) {
-        /*let active = true*/
-        menuBtn.addEventListener('click', function (eventMenuBtn) {
-            active = true
-            const path = eventMenuBtn.currentTarget.dataset.path;
-            document.querySelectorAll('.menu__btn').forEach(function (menuBtnActive) {
-                menuBtnActive.classList.remove('menu__btn--active')
-            });
-            eventMenuBtn.currentTarget.classList.add('menu__btn--active');
-            document.querySelectorAll('.dropdown-menu').forEach(function (tabContentMenu) {
-                tabContentMenu.classList.remove('dropdown-menu--active')
-            });
-            document.querySelector(`[data-target="${path}"]`).classList.add('dropdown-menu--active')
+function onDisable(evt) {
+    if (evt.target.classList.contains(params.disabledClassName)) {
+        evt.target.classList.remove(params.disabledClassName, params.activeClassName);
+        evt.target.removeEventListener("animationend", onDisable);
+    }
+}
 
-            if (active) {
-                menuBtn.addEventListener('click', function (eventMenuBtn) {
-                    eventMenuBtn.currentTarget.classList.toggle('menu__btn--active');
-                    document.querySelector(`[data-target="${path}"]`).classList.toggle('dropdown-menu--active')
-                    active = false
-                })
+function setMenuListener() {
+    document.body.addEventListener("click", (evt) => {
+        const activeElements = document.querySelectorAll(`.${params.btnClassName}.${params.activeClassName}, .${params.dropClassName}.${params.activeClassName}`);
+
+        if (activeElements.length && !evt.target.closest(`.${params.activeClassName}`)) {
+            activeElements.forEach((current) => {
+                if (current.classList.contains(params.btnClassName)) {
+                    current.classList.remove(params.activeClassName);
+                } else {
+                    current.classList.add(params.disabledClassName);
+                }
+            });
+        }
+
+        if (evt.target.closest(`.${params.btnClassName}`)) {
+            const btn = evt.target.closest(`.${params.btnClassName}`);
+            const path = btn.dataset.path;
+            const drop = document.querySelector(`.${params.dropClassName}[data-target="${path}"]`);
+
+            btn.classList.toggle(params.activeClassName);
+
+            if (!drop.classList.contains(params.activeClassName)) {
+                drop.classList.add(params.activeClassName);
+                drop.addEventListener("animationend", onDisable);
             } else {
-                document.querySelector(`[data-target="${path}"]`).classList.toggle('dropdown-menu--active')
+                drop.classList.add(params.disabledClassName);
             }
-        });
-    })
-})
+        }
+    });
+}
+
+setMenuListener();
