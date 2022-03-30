@@ -22,9 +22,65 @@
     <header class="header ">
       <div class="header-top">
         <div class="header-top__container container">
+
+          <button id="burger" class="header-top__burger-button btn" type="" tabindex="1">
+            <div class="burger-icon">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </button>
+          <!---->
+          <div id="burger-menu" class="burger__menu">
+            <ul class="burger__list ">
+              <li class="burger__item">
+                <a href="#" class="burger__link link" tabindex="2">О нас</a>
+              </li>
+              <li class="burger__item">
+                <a href="#" class="burger__link link" tabindex="3">Галерея</a>
+              </li>
+              <li class="burger__item">
+                <a href="#" class="burger__link link" tabindex="4">Каталог</a>
+              </li>
+              <li class="burger__item">
+                <a href="#" class="burger__link link" tabindex="5">События</a>
+              </li>
+              <li class="burger__item">
+                <a href="#" class="burger__link link" tabindex="6">Проекты</a>
+              </li>
+              <li class="burger__item">
+                <a href="#" class="burger__link link" tabindex="6">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!---->
+
           <a class="header-top__logo logo" href="#">
             <img class="logo-img" src="img/logo.svg" alt="Логотип">
           </a>
+
+
+          <button class="btn close__btn js-close" type="button">
+            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+              <path
+                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
+            </svg>
+          </button>
+          <form class="header-top__search search">
+            <button class="search__btn btn" type="submit" aria-label="Кнопка поиск" tabindex="500">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <input class="search__input" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
+          </form>
+
+
+
           <nav class="header-top__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -251,22 +307,42 @@
           <div class="swiper swiper--gallery ">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="img" src="img/gallery/350x350/1.jpg">
+                <picture>
+                  <source srcset="img/gallery/320/1.jpg" media="(max-width: 320px)">
+                  <source srcset="img/gallery/768/1.jpg" media="(max-width: 768px)">
+                  <source srcset="img/gallery/1024/1.jpg" media="(max-width: 1024px)">
+                  <img class="img" src="img/gallery/1920/1.jpg">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="img" src="img/gallery/350x350/2.jpg">
+                <picture>
+
+                  <img class="img" src="img/gallery/1920/2.jpg">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="img" src="img/gallery/350x350/3.jpg">
+                <picture>
+
+                  <img class="img" src="img/gallery/1920/3.jpg">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="img" src="img/gallery/350x350/4.jpg">
+                <picture>
+
+                  <img class="img" src="img/gallery/1920/4.jpg">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="img" src="img/gallery/350x350/5.jpg">
+                <picture>
+
+                  <img class="img" src="img/gallery/1920/5.jpg">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="img" src="img/gallery/350x350/6.jpg">
+                <picture>
+
+                  <img class="img" src="img/gallery/1920/6.jpg">
+                </picture>
               </div>
             </div>
 
@@ -569,10 +645,10 @@
           <ul class="events__list swiper-wrapper">
 
             <li class="events-card swiper-slide first-event">
-              <figcaption class="events-card__figcaption">
+              <div class="events-card__figcaption">
                 <span class="events-card__figcaption-text">Музей им. Щусева</span>
                 <span class="events-card__figcaption-text"> с 20 марта по 30 апреля</span>
-              </figcaption>
+              </div>
               <h3 class="events-card__title title title--small">Книжная гравюра в живом восприятии</h3>
               <p class="events-card__text">Один из ведущих флорентийских художников Кватроченто, основатель
                 художественной
@@ -581,10 +657,10 @@
             </li>
 
             <li class="events-card swiper-slide second-event">
-              <figcaption class="events-card__figcaption">
+              <div class="events-card__figcaption">
                 <span class="events-card__figcaption-text">ММОМА</span>
                 <span class="events-card__figcaption-text"> 24 марта 19:00</span>
-              </figcaption>
+              </div>
               <h3 class="events-card__title title title--small">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
               </h3>
               <p class="events-card__text">Высокий уровень вовлечения представителей целевой аудитории является четким
@@ -593,10 +669,10 @@
             </li>
 
             <li class="events-card swiper-slide third-event">
-              <figcaption class="events-card__figcaption">
+              <div class="events-card__figcaption">
                 <span class="events-card__figcaption-text">Еврейский музей</span>
                 <span class="events-card__figcaption-text"> с 31 марта по 21 апреля</span>
-              </figcaption>
+              </div>
               <h3 class="events-card__title title title--small">Выставка «Формация 2020»</h3>
               <p class="events-card__text">Идейные соображения высшего порядка, а также современная методология
                 разработки
@@ -605,10 +681,10 @@
             </li>
 
             <li class="events-card swiper-slide fourth-event">
-              <figcaption class="events-card__figcaption">
+              <div class="events-card__figcaption">
                 <span class="events-card__figcaption-text">Третьяковка на Крымском валу </span>
                 <span class="events-card__figcaption-text">с 30 марта по 30 апреля</span>
-              </figcaption>
+              </div>
               <h3 class="events-card__title title title--small">XXIV Международная биеннале молодого искусства</h3>
               <p class="events-card__text">Внезапно, реплицированные с зарубежных источников, современные исследования.
               </p>
@@ -616,10 +692,10 @@
             </li>
 
             <li class="events-card swiper-slide fifth-event">
-              <figcaption class="events-card__figcaption">
+              <div class="events-card__figcaption">
                 <span class="events-card__figcaption-text">ММАМ</span>
                 <span class="events-card__figcaption-text"> с 8 апреля по 20 мая</span>
-              </figcaption>
+              </div>
               <h3 class="events-card__title title title--small">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
               <p class="events-card__text">Один из ведущих флорентийских художников Кватроченто, основатель
                 художественной
@@ -739,7 +815,10 @@
           <div class="form__item">
             <input class="item-form" name="telephone" type="phone" placeholder="Телефон*" data-validate-field="phone">
           </div>
-          <button class="btn btn--form">Заказать обратный звонок</button>
+          <button class="btn btn--form">
+            <span class="btn-big">Заказать обратный звонок</span>
+            <span class="btn-small">Заказать</span>
+          </button>
         </form>
 
         <div class="contacts__feedback feedback">
@@ -831,7 +910,7 @@
 
 
 
-
+  <script src="js/burger-menu.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/choices.min.js"></script>
