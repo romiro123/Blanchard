@@ -1253,7 +1253,6 @@ body {
 }
 
 .events__title {
-
   margin-bottom: 15px;
 }
 
@@ -1269,34 +1268,18 @@ body {
   flex-direction: column;
   height: auto;
   border: 1px solid var(--silver);
-  padding: 315px 50px 40px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
 }
 
-.first-event {
-  background-image: url(../img/events/1920/events1.jpg);
+.events-card__top {
+  margin-bottom: 13px;
 }
 
-.second-event {
-  background-image: url(../img/events/1920/events2.jpg);
-}
-
-.third-event {
-  background-image: url(../img/events/1920/events3.jpg);
-}
-
-.fourth-event {
-  background-image: url(../img/events/1920/events4.jpg);
-}
-
-.fifth-event {
-  background-image: url(../img/events/1920/events5.jpg);
+.events-card__img {
+  margin-bottom: 13px;
 }
 
 .events-card__figcaption {
-  margin-bottom: 15px;
+  padding: 0 50px;
 }
 
 .events-card__figcaption-text {
@@ -1306,6 +1289,14 @@ body {
   line-height: 16px;
   color: var(--dusty-gray);
 }
+
+.events-card__bottom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0px 50px 40px;
+}
+
 
 .events-card__title {
   margin-bottom: 10px;
@@ -1526,7 +1517,7 @@ body {
 /*-------------------------contacts-------------------------*/
 .contacts {
   border: 1px solid var(--silver);
-  padding: 38px 0;
+  padding: 40px 0;
 }
 
 .contacts__container {
@@ -1752,7 +1743,7 @@ body {
     margin-bottom: 35px;
   }
 
-  /*---catalog---*/
+  /*----------------------------------catalog----------------------------------*/
   .person {
     width: 50%;
   }
@@ -1762,53 +1753,41 @@ body {
   }
 
   /*------------------------------------event------------------------------------*/
+
+  .events {
+    margin-bottom: 68px;
+  }
+
   .events__list {
     margin-bottom: 20px;
   }
 
-  .events-card {
-    padding: 216px 32px 48px;
-  }
-
-  .first-event {
-    background-image: url(../img/events/1024/events1.jpg);
-  }
-
-  .second-event {
-    background-image: url(../img/events/1024/events2.jpg);
-  }
-
-  .third-event {
-    background-image: url(../img/events/1024/events3.jpg);
-  }
-
-  .fourth-event {
-    background-image: url(../img/events/1024/events4.jpg);
-  }
-
-  .fifth-event {
-    background-image: url(../img/events/1024/events5.jpg);
+  .events-card__img {
+    margin-bottom: 17px;
   }
 
   .events-card__figcaption {
     text-align: right;
-    margin-bottom: 5px;
+    padding: 0 33px;
+  }
+
+  .events-card__top {
+    margin-bottom: 4px;
+  }
+
+  .events-card__bottom {
+    padding: 0px 32px 50px;
   }
 
   .events-card__text {
     margin-bottom: 20px;
   }
 
-
   .swiper-pagination-events {
     display: block;
   }
 
-  /*----------------------------------events----------------------------------*/
-  .events {
-    margin-bottom: 68px;
-  }
-
+  /*----------------------------------project----------------------------------*/
   .project__slider {
     padding: 0 50px;
   }
@@ -1848,17 +1827,12 @@ body {
   }
 
 
-  /*-------------------------------------map------------------------------------*/
-  .map {
-    height: 705px;
-  }
-
   /*-----------------------------------footer----------------------------------*/
   .footer {
     padding: 40px 0;
   }
 
-  .social__item:not(:last-child) {
+  .social__item--footer:not(:last-child) {
     margin-right: 30px;
   }
 
