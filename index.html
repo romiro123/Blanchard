@@ -60,24 +60,22 @@
           </a>
 
 
-          <button class="btn close__btn js-close" type="button">
-            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-              <path
-                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
-            </svg>
+          <div id="search-form" class="header-top__search">
+            <form class=" search">
+              <button class="search__btn btn" type="submit" aria-label="Кнопка поиск" tabindex="500">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="6.8678" height="1.71695"
+                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <input class="search__input" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+          <button id="btn-search-open" class="btn btn--close" type="button">
           </button>
-          <form class="header-top__search search">
-            <button class="search__btn btn" type="submit" aria-label="Кнопка поиск" tabindex="500">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="6.8678" height="1.71695"
-                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
-                  fill="white" />
-              </svg>
-            </button>
-            <input class="search__input" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
-          </form>
 
 
 
@@ -117,6 +115,7 @@
           </a>
         </div>
       </div>
+
       <div class="header-bottom">
         <div class="header-bottom__container container">
           <ul class="header-bottom__menu menu">
@@ -301,46 +300,45 @@
         <div class="gallery__slider">
           <div class="gallery__nav gallery-nav">
             <div class="swiper-button-prev swiper-button-prev--gallery"></div>
-            <div class="swiper-pagination swiper-pagination--gallery swiper-pagination-fraction--gallery"></div>
+            <div class="swiper-pagination swiper-pagination-gallery swiper-pagination-fraction-gallery"></div>
             <div class="swiper-button-next swiper-button-next--gallery"></div>
           </div>
           <div class="swiper swiper--gallery ">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+
                 <picture>
-                  <source srcset="img/gallery/320/1.jpg" media="(max-width: 320px)">
-                  <source srcset="img/gallery/768/1.jpg" media="(max-width: 768px)">
-                  <source srcset="img/gallery/1024/1.jpg" media="(max-width: 1024px)">
+                  <source srcset="img/gallery/1024/1.jpg" media="(max-width: 1440px)">
                   <img class="img" src="img/gallery/1920/1.jpg">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-
+                  <source srcset="img/gallery/1024/2.jpg" media="(max-width: 1440px)">
                   <img class="img" src="img/gallery/1920/2.jpg">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-
+                  <source srcset="img/gallery/1024/3.jpg" media="(max-width: 1440px)">
                   <img class="img" src="img/gallery/1920/3.jpg">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-
+                  <source srcset="img/gallery/1024/4.jpg" media="(max-width: 1440px)">
                   <img class="img" src="img/gallery/1920/4.jpg">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-
+                  <source srcset="img/gallery/1024/5.jpg" media="(max-width: 1440px)">
                   <img class="img" src="img/gallery/1920/5.jpg">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-
+                  <source srcset="img/gallery/1024/6.jpg" media="(max-width: 1440px)">
                   <img class="img" src="img/gallery/1920/6.jpg">
                 </picture>
               </div>
@@ -522,12 +520,12 @@
               <li>
                 <button class="btn btn-person" data-path="person-default">Пинтуриккьо</button>
               </li>
-              <li>
+              <!--<li>
                 <button class="btn" data-path=""></button>
               </li>
               <li>
                 <button class="btn" data-path=""></button>
-              </li>
+              </li>-->
             </ul>
 
           </li>
@@ -703,10 +701,13 @@
               <a href="#" class="events-card__link link link--detail">Подробнее</a>
             </li>
           </ul>
+          <div class="swiper-pagination swiper-pagination-events"></div>
         </div>
 
         <div class="swiper-button-prev swiper-button-prev--events"></div>
+
       </div>
+
     </section>
 
     <section class="project container">
