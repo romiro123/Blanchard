@@ -19,7 +19,12 @@ let swiperGallery = new Swiper('.swiper--gallery', {
     spaceBetween: 50,*/
 
     breakpoints: {
-        // when window width is >= 1024px
+        // when window width is >= ____px
+        768: {
+            slidesPerGroup: 2,
+            slidesPerView: 2,
+            spaceBetween: 38,
+        },
         1024: {
             slidesPerGroup: 2,
             slidesPerView: 2,
@@ -52,7 +57,12 @@ let swiperEvents = new Swiper('.swiper--events', {
     slidesPerView: 3,
     spaceBetween: 50,*/
     breakpoints: {
-        // when window width is >= 1024px
+        // when window width is >= _____px
+        768: {
+            slidesPerGroup: 2,
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
         1024: {
             slidesPerGroup: 1,
             slidesPerView: 3,
@@ -86,7 +96,11 @@ let swiperProject = new Swiper('.swiper--project', {
     spaceBetween: 50,*/
 
     breakpoints: {
-        // when window width is >= 1024px
+        // when window width is >= ___px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
         1024: {
             slidesPerView: 2,
             spaceBetween: 50,

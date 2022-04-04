@@ -328,7 +328,21 @@
 
 
 
+@media (max-width: 1023px) {
+  .choices__inner {
+    min-height: 40px;
+  }
 
+  .choices__list--single .choices__item {
+    padding: 2px 15px 4px;
+  }
+
+  .choices__list--dropdown {
+    top: 40px;
+  }
+
+
+}
 
 /*
 
