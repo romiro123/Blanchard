@@ -344,6 +344,13 @@
 
 }
 
+@media (max-width: 767px) {
+
+  .choices__list--single .choices__item {
+    padding: 2px 15px 4px;
+  }
+}
+
 /*
 
 @media (min-width:640px) {
