@@ -5,9 +5,9 @@ window.addEventListener('DOMContentLoaded', function () {
   burgerBtn.addEventListener('click', function () {
     burgerBtn.classList.toggle('burger-icon-active');
     if (burgerBtn.classList.contains('burger-icon-active')) {
-      burger__menu.classList.add('burger__menu-active');
+      burger__menu.classList.add('burger-menu-active');
     } else {
-      burger__menu.classList.remove('burger__menu-active');
+      burger__menu.classList.remove('burger-menu-active');
     };
   });
 });
