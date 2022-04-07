@@ -26,11 +26,11 @@
         <div class="header-top__container container">
 
           <button id="burger" class="header-top__burger-button btn" type="button">
-            <div class="burger-icon">
+            <span class="burger-icon">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
-            </div>
+            </span>
           </button>
 
           <div id="burger-menu" class="burger-menu">
@@ -76,6 +76,7 @@
               <img class="img" src="img/logo-desktop.svg" alt="Логотип">
             </picture>
           </a>
+          <h1 class="sr-only">Blanchard</h1>
 
           <div id="search-form" class="header-top__search">
             <form class=" search">
@@ -88,7 +89,7 @@
                     fill="white" />
                 </svg>
               </button>
-              <input class="search__input" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
+              <input class="search__input" type="search" name="Поиск" placeholder="Поиск по сайту">
             </form>
           </div>
           <button id="btn-search-open" class="btn btn--close" type="button" aria-label="Кнопка поиск">
@@ -237,7 +238,7 @@
                   fill="white" />
               </svg>
             </button>
-            <input class="search__input" type="search" name="Поиск" id="search" placeholder="Поиск по сайту">
+            <input class="search__input" type="search" name="Поиск" placeholder="Поиск по сайту">
           </form>
         </div>
       </div>
@@ -285,7 +286,7 @@
         <div class="gallery__left">
           <h2 class="gallery__title title title--light">Галерея</h2>
           <div class="gallery__filter filter">
-            <span class="filter__title title title--very-small title--light">Фильтр:</span>
+            <span class="filter__title">Фильтр:</span>
             <select name="material" id="material" aria-label="Свернутый список фильтра">
               <option value="">Живопись</option>
               <option>Рисунок</option>
@@ -319,7 +320,7 @@
                     <source srcset="img/gallery/320/1.jpg" media="(max-width: 767px)">
                     <source srcset="img/gallery/768/1.jpg" media="(max-width: 1023px)">
                     <source srcset="img/gallery/1024/1.jpg" media="(max-width: 1439px)">
-                    <img class="img img--gallery" src="img/gallery/1920/1.jpg">
+                    <img class="img img--gallery" src="img/gallery/1920/1.jpg" alt="Слайд-1">
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -327,7 +328,7 @@
                     <source srcset="img/gallery/320/2.jpg" media="(max-width: 767px)">
                     <source srcset="img/gallery/768/2.jpg" media="(max-width: 1023px)">
                     <source srcset="img/gallery/1024/2.jpg" media="(max-width: 1439px)">
-                    <img class="img img--gallery" src="img/gallery/1920/2.jpg">
+                    <img class="img img--gallery" src="img/gallery/1920/2.jpg" alt="Слайд-2">
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -335,7 +336,7 @@
                     <source srcset="img/gallery/320/3.jpg" media="(max-width: 767px)">
                     <source srcset="img/gallery/768/3.jpg" media="(max-width: 1023px)">
                     <source srcset="img/gallery/1024/3.jpg" media="(max-width: 1439px)">
-                    <img class="img img--gallery" src="img/gallery/1920/3.jpg">
+                    <img class="img img--gallery" src="img/gallery/1920/3.jpg" alt="Слайд-3">
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -343,7 +344,7 @@
                     <source srcset="img/gallery/320/4.jpg" media="(max-width: 767px)">
                     <source srcset="img/gallery/768/4.jpg" media="(max-width: 1023px)">
                     <source srcset="img/gallery/1024/4.jpg" media="(max-width: 1439px)">
-                    <img class="img img--gallery" src="img/gallery/1920/4.jpg">
+                    <img class="img img--gallery" src="img/gallery/1920/4.jpg" alt="Слайд-4">
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -351,7 +352,7 @@
                     <source srcset="img/gallery/320/5.jpg" media="(max-width: 767px)">
                     <source srcset="img/gallery/768/5.jpg" media="(max-width: 1023px)">
                     <source srcset="img/gallery/1024/5.jpg" media="(max-width: 1439px)">
-                    <img class="img img--gallery" src="img/gallery/1920/5.jpg">
+                    <img class="img img--gallery" src="img/gallery/1920/5.jpg" alt="Слайд-5">
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -359,7 +360,7 @@
                     <source srcset="img/gallery/320/6.jpg" media="(max-width: 767px)">
                     <source srcset="img/gallery/768/6.jpg" media="(max-width: 1023px)">
                     <source srcset="img/gallery/1024/6.jpg" media="(max-width: 1439px)">
-                    <img class="img img--gallery" src="img/gallery/1920/6.jpg">
+                    <img class="img img--gallery" src="img/gallery/1920/6.jpg" alt="Слайд-6">
                   </picture>
                 </div>
               </div>
@@ -380,8 +381,8 @@
       </div>
       <div class="catalog__content card">
 
-        <div class="card__person person person-ac" data-target="domeniko-girlandayo" id="domeniko-girlandayo">
-          <img class="person__img img" src="img/catalog/domeniko-girlandayo.jpg">
+        <div class="card__person person person-ac" data-target="domeniko-girlandayo">
+          <img class="person__img img" src="img/catalog/domeniko-girlandayo.jpg" alt="Доменико Гирландайо">
           <h3 class="person__title title title--small">Доменико Гирландайо</h3>
           <span class="person__subtitle subtitle subtitle--small">2 июня 1448 — 11 января 1494.</span>
           <p class="person__info">
@@ -395,8 +396,8 @@
           </p>
         </div>
 
-        <div class="card__person person" data-target="benedetto-di-bindo" id="benedetto-di-bindo">
-          <img class="person__img img" src="img/catalog/benedetto-di-bindo.jpg">
+        <div class="card__person person" data-target="benedetto-di-bindo">
+          <img class="person__img img" src="img/catalog/benedetto-di-bindo.jpg" alt="Бенедетто ди Биндо">
           <h3 class="person__title title title--small">Бенедетто ди Биндо</h3>
           <span class="person__subtitle subtitle subtitle--small">1380 — 19 сентября 1417.</span>
           <p class="person__info">
@@ -409,8 +410,8 @@
           </p>
         </div>
 
-        <div class="card__person person" data-target="bergonone-ambrodzho" id="bergonone-ambrodzho">
-          <img class="person__img img" src="img/catalog/bergonone-ambrodzho.jpg">
+        <div class="card__person person" data-target="bergonone-ambrodzho">
+          <img class="person__img img" src="img/catalog/bergonone-ambrodzho.jpg" alt="Бергоньоне Амброджо">
           <h3 class="person__title title title--small">Бергоньоне, Амброджо</h3>
           <span class="person__subtitle subtitle subtitle--small"> 1453 г. — 1523 г.</span>
           <p class="person__info">
@@ -427,8 +428,8 @@
           </p>
         </div>
 
-        <div class="card__person person" data-target="bissolo-frantsiya" id="bissolo-frantsiya">
-          <img class="person__img img" src="img/catalog/bissolo-frantsiya.jpg">
+        <div class="card__person person" data-target="bissolo-frantsiya">
+          <img class="person__img img" src="img/catalog/bissolo-frantsiya.jpg" alt="Биссоло Франческо">
           <h3 class="person__title title title--small">Биссоло, Франческо</h3>
           <span class="person__subtitle subtitle subtitle--small">1470 г. — 20 апреля 1554.</span>
           <p class="person__info">
@@ -448,8 +449,8 @@
           </p>
         </div>
 
-        <div class="card__person person" data-target="person-default" id="person-default">
-          <img class="person__img img" src="img/catalog/person-default.jpg">
+        <div class="card__person person" data-target="person-default">
+          <img class="person__img img" src="img/catalog/person-default.jpg" alt="Неизвестный художник">
           <h3 class="person__title title title--small">Что мы о нём знаем?</h3>
           <span class="person__subtitle subtitle subtitle--small"></span>
           <p>
@@ -461,109 +462,84 @@
         <ul class="accordion">
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 1400 по 1499 гг.</p>
+              <span class="accordion__title title title--very-small">C 1400 по 1499 гг.</span>
             </button>
 
             <ul class="ui-accordion-content ui-accordion-content-text">
               <li>
-                <button class="btn btn-person scroll-link" href="#benedetto-di-bindo"
-                  data-path="benedetto-di-bindo">Бенедетто ди Биндо</button>
+                <button class="btn btn-person" data-path="benedetto-di-bindo">Бенедетто ди Биндо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#bergonone-ambrodzho"
-                  data-path="bergonone-ambrodzho">Бергоньоне, Амброджо</button>
+                <button class="btn btn-person" data-path="bergonone-ambrodzho">Бергоньоне, Амброджо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#bissolo-frantsiya"
-                  data-path="bissolo-frantsiya">Биссоло, Франческо</button>
+                <button class="btn btn-person" data-path="bissolo-frantsiya">Биссоло, Франческо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Больтраффио,
-                  Джованни</button>
+                <button class="btn btn-person" data-path="person-default">Больтраффио, Джованни</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Бонсиньори,
-                  Франческо</button>
+                <button class="btn btn-person" data-path="person-default">Бонсиньори, Франческо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Боттичини,
-                  Рафаэлло</button>
+                <button class="btn btn-person" data-path="person-default">Боттичини, Рафаэлло</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Брамантино</button>
+                <button class="btn btn-person" data-path="person-default">Брамантино</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Бреа,
-                  Людовико</button>
+                <button class="btn btn-person" data-path="person-default">Бреа, Людовико</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Бьяджо
-                  д’Антонио Туччи</button>
+                <button class="btn btn-person" data-path="person-default">Бьяджо д’Антонио Туччи</button>
               </li>
               <!---->
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Веккьетта</button>
+                <button class="btn btn-person" data-path="person-default">Веккьетта</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Андреа
-                  Верроккьо</button>
+                <button class="btn btn-person" data-path="person-default">Андреа Верроккьо</button>
               </li>
               <li>
-                <button class="btn btn-person  btn-person-active scroll-link" href="#domeniko-girlandayo"
-                  data-path="domeniko-girlandayo">Доменико
+                <button class="btn btn-person  btn-person-active" data-path="domeniko-girlandayo">Доменико
                   Гирландайо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Беноццо
-                  Гоццоли</button>
+                <button class="btn btn-person" data-path="person-default">Беноццо Гоццоли</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Граначчи,
-                  Франческо</button>
+                <button class="btn btn-person" data-path="person-default">Граначчи, Франческо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Грегорио ди
-                  Чекко</button>
+                <button class="btn btn-person" data-path="person-default">Грегорио ди Чекко</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Джованни да
-                  Удине</button>
+                <button class="btn btn-person" data-path="person-default">Джованни да Удине</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Джованни ди
-                  Паоло</button>
+                <button class="btn btn-person" data-path="person-default">Джованни ди Паоло</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Джорджоне</button>
+                <button class="btn btn-person" data-path="person-default">Джорджоне</button>
               </li>
               <!---->
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Парентино,
-                  Бернардо</button>
+                <button class="btn btn-person" data-path="person-default">Парентино, Бернардо</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Пезеллино</button>
+                <button class="btn btn-person" data-path="person-default">Пезеллино</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Пьетро
-                  Перуджино</button>
+                <button class="btn btn-person" data-path="person-default">Пьетро Перуджино</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default" data-path="person-default">Перуцци,
-                  Бальдассаре</button>
+                <button class="btn btn-person" data-path="person-default">Перуцци, Бальдассаре</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Пизанелло</button>
+                <button class="btn btn-person" data-path="person-default">Пизанелло</button>
               </li>
               <li>
-                <button class="btn btn-person scroll-link" href="#person-default"
-                  data-path="person-default">Пинтуриккьо</button>
+                <button class="btn btn-person" data-path="person-default">Пинтуриккьо</button>
               </li>
               <!--<li>
                 <button class="btn" data-path=""></button>
@@ -576,11 +552,14 @@
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 1500 по 1599 гг.</p>
+              <span class="accordion__title title title--very-small">C 1500 по 1599 гг.</span>
             </button>
-
             <div class="ui-accordion-content ui-accordion-content--none ui-accordion-content-text">
-              <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg">
+              <picture>
+                <source srcset="img/catalog/person-default-no-content-320.jpg" media="(max-width: 767px)">
+                <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg"
+                  alt="Неизвестный художник">
+              </picture>
               <div class="ui-accordion-content__info">
                 <h3 class="ui-accordion-content__title title title--very-small">Здесь пока пусто</h3>
                 <p class="ui-accordion-content__text">
@@ -593,10 +572,14 @@
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 1600 по 1699 гг.</p>
+              <span class="accordion__title title title--very-small">C 1600 по 1699 гг.</span>
             </button>
             <div class="ui-accordion-content ui-accordion-content--none ui-accordion-content-text">
-              <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg">
+              <picture>
+                <source srcset="img/catalog/person-default-no-content-320.jpg" media="(max-width: 767px)">
+                <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg"
+                  alt="Неизвестный художник">
+              </picture>
               <div class="ui-accordion-content__info">
                 <h3 class="ui-accordion-content__title title title--very-small">Здесь пока пусто</h3>
                 <p class="ui-accordion-content__text">
@@ -609,11 +592,15 @@
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 1700 по 1799 гг.</p>
+              <span class="accordion__title title title--very-small">C 1700 по 1799 гг.</span>
             </button>
 
             <div class="ui-accordion-content ui-accordion-content--none ui-accordion-content-text">
-              <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg">
+              <picture>
+                <source srcset="img/catalog/person-default-no-content-320.jpg" media="(max-width: 767px)">
+                <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg"
+                  alt="Неизвестный художник">
+              </picture>
               <div class="ui-accordion-content__info">
                 <h3 class="ui-accordion-content__title title title--very-small">Здесь пока пусто</h3>
                 <p class="ui-accordion-content__text">
@@ -626,11 +613,15 @@
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 1800 по 1899 гг.</p>
+              <span class="accordion__title title title--very-small">C 1800 по 1899 гг.</span>
             </button>
 
             <div class="ui-accordion-content ui-accordion-content--none ui-accordion-content-text">
-              <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg">
+              <picture>
+                <source srcset="img/catalog/person-default-no-content-320.jpg" media="(max-width: 767px)">
+                <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg"
+                  alt="Неизвестный художник">
+              </picture>
               <div class="ui-accordion-content__info">
                 <h3 class="ui-accordion-content__title title title--very-small">Здесь пока пусто</h3>
                 <p class="ui-accordion-content__text">
@@ -643,11 +634,15 @@
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 1900 по 1999 гг.</p>
+              <span class="accordion__title title title--very-small">C 1900 по 1999 гг.</span>
             </button>
 
             <div class="ui-accordion-content ui-accordion-content--none ui-accordion-content-text">
-              <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg">
+              <picture>
+                <source srcset="img/catalog/person-default-no-content-320.jpg" media="(max-width: 767px)">
+                <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg"
+                  alt="Неизвестный художник">
+              </picture>
               <div class="ui-accordion-content__info">
                 <h3 class="ui-accordion-content__title title title--very-small">Здесь пока пусто</h3>
                 <p class="ui-accordion-content__text">
@@ -660,11 +655,15 @@
           </li>
           <li class="accordion__item">
             <button class="btn btn--accordion">
-              <p class="accordion__title title title--very-small">C 2000 г.</p>
+              <span class="accordion__title title title--very-small">C 2000 г.</span>
             </button>
 
             <div class="ui-accordion-content ui-accordion-content--none ui-accordion-content-text">
-              <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg">
+              <picture>
+                <source srcset="img/catalog/person-default-no-content-320.jpg" media="(max-width: 767px)">
+                <img class="ui-accordion-content__img img" src="img/catalog/person-default-no-content.jpg"
+                  alt="Неизвестный художник">
+              </picture>
               <div class="ui-accordion-content__info">
                 <h3 class="ui-accordion-content__title title title--very-small">Здесь пока пусто</h3>
                 <p class="ui-accordion-content__text">
@@ -687,18 +686,19 @@
         <div class="swiper swiper--events">
           <ul class="events__list swiper-wrapper">
             <li class="events-card swiper-slide">
-              <div class="events-card__top">
+              <figure class="events-card__top">
                 <picture>
                   <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
                   <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
                   <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)">
-                  <img class="events-card__img img" src="img/events/1920/events1.jpg">
+                  <img class="events-card__img img" src="img/events/1920/events1.jpg"
+                    alt="Книжная гравюра в живом восприятии">
                 </picture>
                 <figcaption class="events-card__figcaption">
                   <span class="events-card__figcaption-text">Музей им. Щусева</span>
                   <span class="events-card__figcaption-text"> с 20 марта по 30 апреля</span>
                 </figcaption>
-              </div>
+              </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">Книжная гравюра в живом восприятии</h3>
                 <p class="events-card__text">Один из ведущих флорентийских художников Кватроченто, основатель
@@ -708,18 +708,18 @@
               </div>
             </li>
             <li class="events-card swiper-slide">
-              <div class="events-card__top">
+              <figure class="events-card__top">
                 <picture>
                   <source srcset="img/events/320/events2.jpg" media="(max-width: 767px)">
                   <source srcset="img/events/768/events2.jpg" media="(max-width: 1023px)">
                   <source srcset="img/events/1024/events2.jpg" media="(max-width: 1439px)">
-                  <img class="events-card__img img" src="img/events/1920/events2.jpg">
+                  <img class="events-card__img img" src="img/events/1920/events2.jpg" alt="Открытая дискуссия">
                 </picture>
                 <figcaption class="events-card__figcaption">
                   <span class="events-card__figcaption-text">ММОМА</span>
                   <span class="events-card__figcaption-text"> 24 марта 19:00</span>
                 </figcaption>
-              </div>
+              </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                 </h3>
@@ -729,18 +729,18 @@
               </div>
             </li>
             <li class="events-card swiper-slide">
-              <div class="events-card__top">
+              <figure class="events-card__top">
                 <picture>
                   <source srcset="img/events/320/events3.jpg" media="(max-width: 767px)">
                   <source srcset="img/events/768/events3.jpg" media="(max-width: 1023px)">
                   <source srcset="img/events/1024/events3.jpg" media="(max-width: 1439px)">
-                  <img class="events-card__img img" src="img/events/1920/events3.jpg">
+                  <img class="events-card__img img" src="img/events/1920/events3.jpg" alt="Выставка Формация 2020">
                 </picture>
                 <figcaption class="events-card__figcaption">
                   <span class="events-card__figcaption-text">Еврейский музей</span>
                   <span class="events-card__figcaption-text"> с 31 марта по 21 апреля</span>
                 </figcaption>
-              </div>
+              </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">Выставка «Формация 2020»</h3>
                 <p class="events-card__text">Идейные соображения высшего порядка, а также современная методология
@@ -750,18 +750,19 @@
               </div>
             </li>
             <li class="events-card swiper-slide">
-              <div class="events-card__top">
+              <figure class="events-card__top">
                 <picture>
                   <source srcset="img/events/320/events4.jpg" media="(max-width: 767px)">
                   <source srcset="img/events/768/events4.jpg" media="(max-width: 1023px)">
                   <source srcset="img/events/1024/events4.jpg" media="(max-width: 1439px)">
-                  <img class="events-card__img img" src="img/events/1920/events4.jpg">
+                  <img class="events-card__img img" src="img/events/1920/events4.jpg"
+                    alt="XXIV Международная биеннале молодого искусства">
                 </picture>
                 <figcaption class="events-card__figcaption">
                   <span class="events-card__figcaption-text">Третьяковка на Крымском валу </span>
                   <span class="events-card__figcaption-text">с 30 марта по 30 апреля</span>
                 </figcaption>
-              </div>
+              </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">XXIV Международная биеннале молодого искусства</h3>
                 <p class="events-card__text">Внезапно, реплицированные с зарубежных источников, современные
@@ -770,18 +771,19 @@
               </div>
             </li>
             <li class="events-card swiper-slide">
-              <div class="events-card__top">
+              <figure class="events-card__top">
                 <picture>
                   <source srcset="img/events/320/events5.jpg" media="(max-width: 767px)">
                   <source srcset="img/events/768/events5.jpg" media="(max-width: 1023px)">
                   <source srcset="img/events/1024/events5.jpg" media="(max-width: 1439px)">
-                  <img class="events-card__img img" src="img/events/1920/events5.jpg">
+                  <img class="events-card__img img" src="img/events/1920/events5.jpg"
+                    alt="Фотография из серии «Метафора серебра»">
                 </picture>
                 <figcaption class="events-card__figcaption">
                   <span class="events-card__figcaption-text">ММАМ</span>
                   <span class="events-card__figcaption-text">с 8 апреля по 20 мая</span>
                 </figcaption>
-              </div>
+              </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">Джон Винзор. Фотографии из серии «Метафора серебра»
                 </h3>
@@ -857,31 +859,31 @@
         <div class="swiper swiper--project">
           <div class="swiper-wrapper project__list">
             <a href="#" class="swiper-slide project__item">
-              <img class="img img--project" src="img/part/1.png">
+              <img class="img img--project" src="img/part/1.png" alt="Партнер">
             </a>
             <a href="#" class="swiper-slide project__item">
-              <img class="img img--project" src="img/part/2.png">
+              <img class="img img--project" src="img/part/2.png" alt="Партнер">
             </a>
             <a href="#" class="swiper-slide project__item">
-              <img class="img img--project" src="img/part/3.png">
+              <img class="img img--project" src="img/part/3.png" alt="Партнер">
             </a>
             <a href="#" class="swiper-slide project__item">
-              <img class="img img--project" src="img/part/4.png">
+              <img class="img img--project" src="img/part/4.png" alt="Партнер">
             </a>
             <a href="#" class=" swiper-slide project__item">
-              <img class="img img--project" src="img/part/5.png">
+              <img class="img img--project" src="img/part/5.png" alt="Партнер">
             </a>
             <a href="#" class=" swiper-slide project__item">
-              <img class="img img--project" src="img/part/6.png">
+              <img class="img img--project" src="img/part/6.png" alt="Партнер">
             </a>
             <a href="#" class=" swiper-slide project__item">
-              <img class="img img--project" src="img/part/7.png">
+              <img class="img img--project" src="img/part/7.png" alt="Партнер">
             </a>
             <a href="#" class=" swiper-slide project__item">
-              <img class="img img--project" src="img/part/8.png">
+              <img class="img img--project" src="img/part/8.png" alt="Партнер">
             </a>
             <a href="#" class=" swiper-slide project__item">
-              <img class="img img--project" src="img/part/9.png">
+              <img class="img img--project" src="img/part/9.png" alt="Партнер">
             </a>
           </div>
         </div>
@@ -893,7 +895,8 @@
       <div class="contacts__container container">
         <div class="contacts__adress">
           <h3 class="title title--very-small"> Шоурум №4 </h3>
-          <span class="contacts__street">Леонтьевский переулок, дом 5/1</span>
+          <address class="contacts__street">Леонтьевский переулок, дом 5/1
+          </address>
         </div>
         <form class="form">
           <div class="form__item form-item">
@@ -946,7 +949,9 @@
       </div>
     </section>
 
-    <section class="map" id="map">
+    <section>
+      <h2 class="sr-only">Мы на карте</h2>
+      <div class="map" id="map"></div>
     </section>
   </main>
 
