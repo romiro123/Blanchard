@@ -34,7 +34,7 @@
           </button>
 
           <div id="burger-menu" class="burger-menu">
-            <ul class="burger-menu__list">
+            <ul class="burger-menu__list ul-reset">
               <li class="burger-menu__item">
                 <a href="#about" class="burger-menu__link link link--menu scroll-link" aria-label="О нас">О
                   нас</a>
@@ -96,7 +96,7 @@
           </button>
 
           <nav class="header-top__nav nav">
-            <ul class="nav__list">
+            <ul class="nav__list ul-reset">
               <li class="nav__item">
                 <a href="#about" class="nav__link link link--nav scroll-link" aria-label="О нас">О
                   нас</a>
@@ -131,12 +131,12 @@
 
       <div class="header-bottom">
         <div class="header-bottom__container container">
-          <ul class="header-bottom__menu menu">
+          <ul class="header-bottom__menu menu ul-reset">
             <li class="menu__item">
               <button class="menu__btn btn" data-path="one" aria-label="Выпадающее меню Реализм">
                 Реализм
               </button>
-              <ul class="menu__dropdown-menu dropdown-menu " data-target="one" data-simplebar>
+              <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="one" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-tintoretto">
                   <a href="#" class="dropdown-menu__content">Тинторетто</a>
                 </li>
@@ -155,7 +155,7 @@
               <button class="menu__btn btn" data-path="two" aria-label="Выпадающее меню Импрессионизм">
                 Импрессионизм
               </button>
-              <ul class="menu__dropdown-menu dropdown-menu" data-target="two" data-simplebar>
+              <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="two" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-mone">
                   <a href="#" class="dropdown-menu__content">Моне</a>
                 </li>
@@ -174,7 +174,7 @@
               <button class="menu__btn btn" data-path="tree" aria-label="Выпадающее меню Постимпрессионизм">
                 Постимпрессионизм
               </button>
-              <ul class="menu__dropdown-menu dropdown-menu" data-target="tree" data-simplebar>
+              <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="tree" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-vangog">
                   <a href="#" class="dropdown-menu__content">Ван Гог</a>
                 </li>
@@ -193,7 +193,7 @@
               <button class="menu__btn btn" data-path="four" aria-label="Выпадающее меню Авангард">
                 Авангард
               </button>
-              <ul class="menu__dropdown-menu dropdown-menu" data-target="four" data-simplebar>
+              <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="four" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-kandinskiy">
                   <a href="#" class="dropdown-menu__content">Кандинский</a>
                 </li>
@@ -212,7 +212,7 @@
               <button class="menu__btn btn" data-path="five" aria-label="Выпадающее меню Футуризм">
                 Футуризм
               </button>
-              <ul class="menu__dropdown-menu dropdown-menu" data-target="five" data-simplebar>
+              <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="five" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-karra">
                   <a href="#" class="dropdown-menu__content">Карра</a>
                 </li>
@@ -247,7 +247,8 @@
     <div class="hero container">
       <div class="hero__content">
         <h2 class="hero__title title title--big title--light">Прикоснитесь к&nbsp;прекрасному</h2>
-        <p class="hero__subtitle subtitle">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных
+        <p class="hero__subtitle subtitle p-reset">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация
+          намеченных
           плановых заданий создаёт предпосылки для новых предложений.</p>
         <button class="hero__btn btn btn--purple">Подписаться на&nbsp;рассылку</button>
       </div>
@@ -269,7 +270,8 @@
         <h2 class="about__title title">
           О нас
         </h2>
-        <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно
+        <p class="about__text p-reset">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+          однозначно
           определяет каждого
           участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов.
           Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс
@@ -294,6 +296,9 @@
             </select>
           </div>
           <div class="gallery__checkbox checkbox">
+
+
+            <!--
             <label class="checkbox-label" tabindex="0" aria-label="галочка для фильтра XIX век">
               <input class="check" type="checkbox">XIX век<span></span>
             </label>
@@ -303,6 +308,26 @@
             <label class="checkbox-label" tabindex="0" aria-label="галочка для фильтра Современность">
               <input class="check" type="checkbox">Современность<span></span>
             </label>
+-->
+            <label class="check-label" aria-label="галочка для фильтра XIX век">
+              <input class="visually-hidden checkbox" type="checkbox">
+              <span class="visible-checkbox"></span>
+              <span class="check-text">XIX век</span>
+            </label>
+
+            <label class="check-label" aria-label="галочка для фильтра XX век">
+              <input class="visually-hidden checkbox" type="checkbox">
+              <span class="visible-checkbox"></span>
+              <span class="check-text">XX век</span>
+            </label>
+
+            <label class="check-label" aria-label="галочка для фильтра Современность">
+              <input class="visually-hidden checkbox" type="checkbox">
+              <span class="visible-checkbox"></span>
+              <span class="check-text">Современность</span>
+            </label>
+
+
           </div>
         </div>
 
@@ -373,7 +398,7 @@
     <section id="catalog" class="catalog container">
       <div class="catalog__info">
         <h2 class="catalog__title title">Каталог</h2>
-        <p class="text-none">Акционеры крупнейших компаний, которые представляют собой яркий пример
+        <p class="text-none p-reset">Акционеры крупнейших компаний, которые представляют собой яркий пример
           континентально-европейского типа
           политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
           частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
@@ -385,7 +410,7 @@
           <img class="person__img img" src="img/catalog/domeniko-girlandayo.jpg" alt="Доменико Гирландайо">
           <h3 class="person__title title title--small">Доменико Гирландайо</h3>
           <span class="person__subtitle subtitle subtitle--small">2 июня 1448 — 11 января 1494.</span>
-          <p class="person__info">
+          <p class="person__info p-reset">
             Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
             продолжили
             его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
@@ -459,13 +484,13 @@
           <a href="#gallery" class="link link--purple scroll-link"> В галерею</a>
         </div>
 
-        <ul class="accordion">
+        <ul class="accordion ul-reset">
           <li class="accordion__item">
             <button class="btn btn--accordion">
               <span class="accordion__title title title--very-small">C 1400 по 1499 гг.</span>
             </button>
 
-            <ul class="ui-accordion-content ui-accordion-content-text">
+            <ul class="ul-reset ui-accordion-content ui-accordion-content-text">
               <li>
                 <button class="btn btn-person" data-path="benedetto-di-bindo">Бенедетто ди Биндо</button>
               </li>
@@ -541,12 +566,12 @@
               <li>
                 <button class="btn btn-person" data-path="person-default">Пинтуриккьо</button>
               </li>
-              <!--<li>
+              <li>
                 <button class="btn" data-path=""></button>
               </li>
               <li>
                 <button class="btn" data-path=""></button>
-              </li>-->
+              </li>
             </ul>
 
           </li>
@@ -684,7 +709,7 @@
       <div class="events__slider">
         <div class="swiper-button-next swiper-button-next--events"></div>
         <div class="swiper swiper--events">
-          <ul class="events__list swiper-wrapper">
+          <ul class="events__list swiper-wrapper ul-reset">
             <li class="events-card swiper-slide">
               <figure class="events-card__top">
                 <picture>
@@ -701,7 +726,7 @@
               </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">Книжная гравюра в живом восприятии</h3>
-                <p class="events-card__text">Один из ведущих флорентийских художников Кватроченто, основатель
+                <p class="events-card__text p-reset">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной
                   династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                 <a href="#" class="events-card__link link link--detail">Подробнее</a>
@@ -723,7 +748,8 @@
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                 </h3>
-                <p class="events-card__text">Высокий уровень вовлечения представителей целевой аудитории является четким
+                <p class="events-card__text p-reset">Высокий уровень вовлечения представителей целевой аудитории
+                  является четким
                   доказательством простого факта.</p>
                 <a href="#" class="events-card__link link link--detail">Подробнее</a>
               </div>
@@ -743,7 +769,8 @@
               </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">Выставка «Формация 2020»</h3>
-                <p class="events-card__text">Идейные соображения высшего порядка, а также современная методология
+                <p class="events-card__text p-reset">Идейные соображения высшего порядка, а также современная
+                  методология
                   разработки
                   играет важную роль в формировании глубокомысленных рассуждений.</p>
                 <a href="#" class="events-card__link link link--detail">Подробнее</a>
@@ -765,7 +792,7 @@
               </figure>
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">XXIV Международная биеннале молодого искусства</h3>
-                <p class="events-card__text">Внезапно, реплицированные с зарубежных источников, современные
+                <p class="events-card__text p-reset">Внезапно, реплицированные с зарубежных источников, современные
                   исследования.</p>
                 <a href="#" class="events-card__link link link--detail">Подробнее</a>
               </div>
@@ -787,7 +814,7 @@
               <div class="events-card__bottom">
                 <h3 class="events-card__title title title--small">Джон Винзор. Фотографии из серии «Метафора серебра»
                 </h3>
-                <p class="events-card__text">Один из ведущих флорентийских художников Кватроченто, основатель
+                <p class="events-card__text p-reset">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной
                   династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                 <a href="#" class="events-card__link link link--detail">Подробнее</a>
@@ -802,7 +829,8 @@
 
     <section id="projects" class="project container">
       <h2 class="project__title title ">Проекты</h2>
-      <p class="project__info">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+      <p class="project__info p-reset">Предварительные выводы: постоянное информационно-пропагандистское обеспечение
+        нашей
         деятельности однозначно
         фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны
         с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает
@@ -903,7 +931,7 @@
             <input class=" item-form" name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
           </div>
           <div class="form__item form-item">
-            <input class="item-form" name="telephone" type="phone" placeholder="Телефон*" data-validate-field="phone">
+            <input class="item-form" name="Телефон" type="tel" placeholder="Телефон*" data-validate-field="tel">
           </div>
           <button class="btn btn--form">
             <span class="btn-big">Заказать обратный звонок</span>
@@ -912,7 +940,7 @@
         </form>
         <div class="contacts__feedback feedback">
           <h3 class="feedback__title title title--very-small">Связаться в один клик</h3>
-          <ul class="feedback__social social">
+          <ul class="feedback__social social ul-reset">
             <li class="social__item">
               <a href="#" class="link link--social" target="blank" aria-label="Мессенджер whatsapp">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -937,7 +965,7 @@
                   <defs>
                     <linearGradient id="paint0_linear_136320_64" x1="20" y1="0" x2="20" y2="39.7033"
                       gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#2AABEE" />
+                      <stop offset="" stop-color="#2AABEE" />
                       <stop offset="1" stop-color="#229ED9" />
                     </linearGradient>
                   </defs>
@@ -963,7 +991,7 @@
           <img class="img" src="img/logo-desktop.svg" alt="Логотип">
         </picture>
       </a>
-      <ul class="footer__social social">
+      <ul class="footer__social social ul-reset">
         <li class="social__item social__item--footer">
           <a href="#" class="link link--social-footer" target="blank" aria-label="социальная сеть Вконтакте">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1008,7 +1036,7 @@
   <script src="js/choices.js"></script>
   <script src="js/sliders.js"></script>
   <script src="js/accordion.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="js/map.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="js/inputmask.min.js"></script>

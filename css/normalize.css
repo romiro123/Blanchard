@@ -44,10 +44,6 @@ h1 {
   margin: 0.67em 0;
 }
 
-h2, h3, h4, h5 {
-  margin: 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -86,11 +82,6 @@ pre {
 
 a {
   background-color: transparent;
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
 }
 
 /**
@@ -178,6 +169,7 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+button,
 input,
 optgroup,
 select,
@@ -190,13 +182,6 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
 }
 
 /**
@@ -243,8 +228,6 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
-
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -393,10 +376,4 @@ template {
 
 [hidden] {
   display: none;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }

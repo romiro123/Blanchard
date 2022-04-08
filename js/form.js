@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-  let selector = document.querySelector("input[type='phone']");
+document.addEventListener("DOMContentLoaded", function () {
+  let selector = document.querySelector("input[type='tel']");
   let e = new Inputmask("+7 (999) 999-99-99");
 
   e.mask(selector);
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         minLength: 2,
         maxLength: 20
       },
-      phone: {
+      tel: {
         required: true,
         function: (name, value) => {
           const phone = selector.inputmask.unmaskedvalue()

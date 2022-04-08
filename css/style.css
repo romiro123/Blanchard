@@ -70,6 +70,7 @@ body {
   font-size: 48px;
   line-height: 65px;
   font-weight: inherit;
+  margin: 0;
 }
 
 .title--big {
@@ -109,6 +110,19 @@ body {
   color: var(--dusty-gray);
 }
 
+
+
+.ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.p-reset {
+  margin: 0;
+}
+
+
 /*---------------------------------btn---------------------------------*/
 .btn {
   font-size: 18px;
@@ -116,6 +130,7 @@ body {
   border: none;
   color: inherit;
   background-color: transparent;
+  padding: 0;
 }
 
 .btn--purple {
@@ -203,6 +218,7 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--white);
+  text-decoration: none;
 }
 
 .link--nav {
@@ -227,7 +243,7 @@ body {
   color: var(--amethyst);
 }
 
-.link--purple:hover::before {
+.link--purple:hover:not(:focus)::before {
   border-bottom: 1px solid var(--amethyst);
 }
 
@@ -248,7 +264,7 @@ body {
 .link--purple:focus:not(:active)::before {
   width: calc(100% + 10px);
   height: 28px;
-  bottom: -3px;
+  top: -3px;
   left: -5px;
   background-color: var(--amethyst);
   z-index: -2;
@@ -661,7 +677,7 @@ body {
 }
 
 .menu__item:not(:last-child) {
-  margin-right: calc(10px + (95 - 10) * ((100vw - 1024px)/ (1920 - 1024)));
+  margin-right: calc(13px + (95 - 10) * ((100vw - 1024px)/ (1920 - 1024)));
 }
 
 .menu__btn {
@@ -745,6 +761,10 @@ body {
   padding: 20px 60px 20px 20px;
 }
 
+.header-bottom__search {
+  width: 250px;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,7 +799,9 @@ body {
 .search__input {
   font-size: 18px;
   line-height: 25px;
-  width: 220px;
+  letter-spacing: 1px;
+  /*width: 220px;*/
+  width: 100%;
   color: var(--white);
   border: none;
   border-bottom: 1px solid var(--white);
@@ -1231,7 +1253,8 @@ body {
 .swiper-button-next--gallery:focus,
 .swiper-button-prev--gallery:focus {
   background-color: var(--dove-gray);
-  outline: 2px solid var(--black);
+  /*outline: 2px solid var(--black);*/
+  outline: 2px solid green;
 }
 
 .swiper-button-next--gallery:active,
@@ -1268,48 +1291,86 @@ body {
   margin-top: auto;
 }
 
-
-.checkbox-label {
+/*-----------------check-box-----------------------*/
+.check-label {
   display: block;
-  position: relative;
   color: var(--white);
   cursor: pointer;
-  padding-left: 25px;
 }
 
-.checkbox-label:hover,
-.checkbox-label:focus {
+.check-label:hover .visible-checkbox {
+  border-color: var(--heliotrope);
+}
+
+.check-label:hover .check-text {
   color: var(--heliotrope);
-  outline: none;
 }
 
-.checkbox-label:hover span,
-.checkbox-label:focus span {
-  border: 1px solid var(--heliotrope);
-}
-
-.check {
-  display: none;
-}
-
-.check+span {
+.visually-hidden {
   position: absolute;
-  top: 10px;
-  left: 0;
-  width: 12px;
-  height: 12px;
-  text-align: center;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.visible-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
   border: 1px solid var(--white);
-  background-repeat: no-repeat;
-  background-position: center center;
+  vertical-align: middle;
+  transition: border-color .3s ease;
 }
 
-.check:checked+span {
-  background-image: url(../img/icon/check-ellipse.svg);
-  border: 1px solid var(--heliotrope);
+.visible-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--heliotrope);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s ease;
 }
 
-.check:checked+.checkbox-label {}
+.checkbox:checked~.visible-checkbox {
+  border-color: var(--heliotrope);
+}
+
+.checkbox:checked~.visible-checkbox::before {
+  opacity: 1;
+}
+
+.checkbox:focus~.visible-checkbox {
+  border-color: var(--heliotrope);
+}
+
+.checkbox:focus~.visible-checkbox::before {
+  background-color: var(--heliotrope);
+}
+
+.check-text {
+  vertical-align: middle;
+  transition: color .3s ease;
+}
+
+.checkbox:checked~.check-text {
+  color: var(--heliotrope);
+}
+
+.checkbox:focus~.check-text {
+  color: var(--heliotrope);
+}
+
 
 /*-------------------------------catalog-------------------------------*/
 .catalog {
@@ -1405,17 +1466,21 @@ body {
 .ui-accordion-header {
   border-top: 1px solid var(--silver);
   border-bottom: 1px solid var(--silver);
+  margin-top: -1px;
 }
 
 .ui-accordion-header:hover {
+  position: relative;
   color: var(--amethyst);
   border-top: 1px solid var(--amethyst);
   border-bottom: 1px solid var(--amethyst);
 }
 
 .ui-accordion-header:focus {
+  position: relative;
+  /*
   border-top: 1px solid var(--amethyst);
-  border-bottom: 1px solid var(--amethyst);
+  border-bottom: 1px solid var(--amethyst);*/
 }
 
 .ui-accordion-header:focus:not(.ui-accordion-header-active) .title {
@@ -1934,6 +1999,7 @@ body {
 
 /*------------------------------------1660------------------------------------*/
 @media (max-width: 1660px) {
+
   .btn-big {
     display: none;
   }
@@ -1948,7 +2014,7 @@ body {
 @media (max-width: 1439px) {
 
   /*----------------------------------header----------------------------------*/
-  .header-top__container {
+  /*.header-top__container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1984,6 +2050,18 @@ body {
 
   .btn--close {
     display: block;
+  }*/
+
+  .header-top__logo {
+    margin-right: 0;
+  }
+
+  .header-top__nav {
+    margin: auto;
+  }
+
+  .header-bottom__search {
+    width: 200px;
   }
 
   /*-------------------------------hero-------------------------------*/
@@ -2192,6 +2270,46 @@ body {
     height: 60px;
   }
 
+}
+
+@media (max-width: 1024px) {
+  .header-top__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+
+  .header-top__logo {
+    margin-right: 0px;
+  }
+
+  .header-top__burger-button {
+    display: block;
+  }
+
+  .header-top__nav {
+    display: none;
+  }
+
+  .header-top__login {
+    display: none;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .btn--close {
+    display: block;
+  }
 }
 
 /*-----------------------------------768------------------------------------*/
