@@ -151,11 +151,12 @@
   overflow: hidden;
   position: relative;
   z-index: auto;
+  transition: all .3s ease-in-out;
 }
 
 .choices__inner:hover {
-  background: rgba(255, 255, 255, 0.2);
-
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color .3s ease-in-out;
 }
 
 
@@ -163,6 +164,7 @@
 
 .is-focused {
   background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color .3s ease-in-out;
 }
 
 .choices__inner {}
@@ -299,6 +301,7 @@
   color: #fff;
   /*background-color: rgba(255, 255, 255, 0.2);*/
   background-color: rgb(65, 65, 65);
+  transition: background-color .3s ease-in-out;
 
 }
 

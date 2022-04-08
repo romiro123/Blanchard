@@ -24,16 +24,17 @@
     <header class="header ">
       <div class="header-top">
         <div class="header-top__container container">
+          <h1 class="sr-only">Blanchard</h1>
 
-          <button id="burger" class="header-top__burger-button btn" type="button">
+          <!--<button id="burger" class="header-top__burger-button btn" type="button">
             <span class="burger-icon">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
             </span>
-          </button>
+          </button>-->
 
-          <div id="burger-menu" class="burger-menu">
+          <!-- <div id="burger-menu" class="burger-menu">
             <ul class="burger-menu__list ul-reset">
               <li class="burger-menu__item">
                 <a href="#about" class="burger-menu__link link link--menu scroll-link" aria-label="О нас">О
@@ -67,7 +68,7 @@
               </svg>
               Войти
             </a>
-          </div>
+          </div>-->
 
           <a class="header-top__logo">
             <picture>
@@ -76,7 +77,6 @@
               <img class="img" src="img/logo-desktop.svg" alt="Логотип">
             </picture>
           </a>
-          <h1 class="sr-only">Blanchard</h1>
 
           <div id="search-form" class="header-top__search">
             <form class=" search">
@@ -96,28 +96,48 @@
           </button>
 
           <nav class="header-top__nav nav">
-            <ul class="nav__list ul-reset">
-              <li class="nav__item">
-                <a href="#about" class="nav__link link link--nav scroll-link" aria-label="О нас">О
-                  нас</a>
-              </li>
-              <li class="nav__item">
-                <a href="#gallery" class="nav__link link link--nav scroll-link" aria-label="Галерея">Галерея</a>
-              </li>
-              <li class="nav__item">
-                <a href="#catalog" class="nav__link link link--nav scroll-link" aria-label="Каталог">Каталог</a>
-              </li>
-              <li class="nav__item">
-                <a href="#events" class="nav__link link link--nav scroll-link" aria-label="События">События</a>
-              </li>
-              <li class="nav__item">
-                <a href="#projects" class="nav__link link link--nav scroll-link" aria-label="Проекты">Проекты</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link link link--nav scroll-link" aria-label="Контакты">Контакты</a>
-              </li>
-            </ul>
+            <div class="nav__burger" id="nav-burger">
+
+              <ul class="nav__list ul-reset">
+                <li class="nav__item">
+                  <a href="#about" class="nav__link link link--nav scroll-link" aria-label="О нас">О
+                    нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#gallery" class="nav__link link link--nav scroll-link" aria-label="Галерея">Галерея</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#catalog" class="nav__link link link--nav scroll-link" aria-label="Каталог">Каталог</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#events" class="nav__link link link--nav scroll-link" aria-label="События">События</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#projects" class="nav__link link link--nav scroll-link" aria-label="Проекты">Проекты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link link link--nav scroll-link" aria-label="Контакты">Контакты</a>
+                </li>
+              </ul>
+              <a href="#" class="burger-menu__login link link--login" aria-label="Войти">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                    fill="white" />
+                </svg>
+                Войти
+              </a>
+            </div>
+            <button id="burger" class="header-top__burger-button btn" type="button">
+              <span class="burger-icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </span>
+            </button>
           </nav>
+
+
           <a href="#" class="header-top__login link link--login" aria-label="Войти">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -138,16 +158,16 @@
               </button>
               <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="one" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-tintoretto">
-                  <a href="#" class="dropdown-menu__content">Тинторетто</a>
+                  <a href="#" class="dropdown-menu__content link">Тинторетто</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-fridrikh">
-                  <a href="#" class="dropdown-menu__content">Фридрих</a>
+                  <a href="#" class="dropdown-menu__content link">Фридрих</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-leonardo">
-                  <a href="#" class="dropdown-menu__content">Леонардо</a>
+                  <a href="#" class="dropdown-menu__content link">Леонардо</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-verrokko">
-                  <a href="#" class="dropdown-menu__content">Верроккьо</a>
+                  <a href="#" class="dropdown-menu__content link">Верроккьо</a>
                 </li>
               </ul>
             </li>
@@ -157,16 +177,16 @@
               </button>
               <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="two" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-mone">
-                  <a href="#" class="dropdown-menu__content">Моне</a>
+                  <a href="#" class="dropdown-menu__content link">Моне</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-sisley">
-                  <a href="#" class="dropdown-menu__content">Сислей</a>
+                  <a href="#" class="dropdown-menu__content link">Сислей</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-mane">
-                  <a href="#" class="dropdown-menu__content">Мане</a>
+                  <a href="#" class="dropdown-menu__content link">Мане</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-renuar">
-                  <a href="#" class="dropdown-menu__content">Ренуар</a>
+                  <a href="#" class="dropdown-menu__content link">Ренуар</a>
                 </li>
               </ul>
             </li>
@@ -176,16 +196,16 @@
               </button>
               <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="tree" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-vangog">
-                  <a href="#" class="dropdown-menu__content">Ван Гог</a>
+                  <a href="#" class="dropdown-menu__content link">Ван Гог</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-sezann">
-                  <a href="#" class="dropdown-menu__content">Сезанн</a>
+                  <a href="#" class="dropdown-menu__content link">Сезанн</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-gogen">
-                  <a href="#" class="dropdown-menu__content">Гоген</a>
+                  <a href="#" class="dropdown-menu__content link">Гоген</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-sora">
-                  <a href="#" class="dropdown-menu__content">Сёра</a>
+                  <a href="#" class="dropdown-menu__content link">Сёра</a>
                 </li>
               </ul>
             </li>
@@ -195,16 +215,16 @@
               </button>
               <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="four" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-kandinskiy">
-                  <a href="#" class="dropdown-menu__content">Кандинский</a>
+                  <a href="#" class="dropdown-menu__content link">Кандинский</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-marinetti">
-                  <a href="#" class="dropdown-menu__content">Маринетти</a>
+                  <a href="#" class="dropdown-menu__content link">Маринетти</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-malevich">
-                  <a href="#" class="dropdown-menu__content">Малевич</a>
+                  <a href="#" class="dropdown-menu__content link">Малевич</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-pikasso">
-                  <a href="#" class="dropdown-menu__content">Пикассо</a>
+                  <a href="#" class="dropdown-menu__content link">Пикассо</a>
                 </li>
               </ul>
             </li>
@@ -214,16 +234,16 @@
               </button>
               <ul class="menu__dropdown-menu dropdown-menu ul-reset" data-target="five" data-simplebar>
                 <li class="dropdown-menu__item dropdown-menu__item--img-karra">
-                  <a href="#" class="dropdown-menu__content">Карра</a>
+                  <a href="#" class="dropdown-menu__content link">Карра</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-pratella">
-                  <a href="#" class="dropdown-menu__content">Прателла</a>
+                  <a href="#" class="dropdown-menu__content link">Прателла</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-severini">
-                  <a href="#" class="dropdown-menu__content">Северини</a>
+                  <a href="#" class="dropdown-menu__content link">Северини</a>
                 </li>
                 <li class="dropdown-menu__item dropdown-menu__item--img-bala">
-                  <a href="#" class="dropdown-menu__content">Балла</a>
+                  <a href="#" class="dropdown-menu__content link">Балла</a>
                 </li>
               </ul>
             </li>
@@ -297,18 +317,6 @@
           </div>
           <div class="gallery__checkbox checkbox">
 
-
-            <!--
-            <label class="checkbox-label" tabindex="0" aria-label="галочка для фильтра XIX век">
-              <input class="check" type="checkbox">XIX век<span></span>
-            </label>
-            <label class="checkbox-label" tabindex="0" aria-label="галочка для фильтра XX век">
-              <input class="check" type="checkbox">XX век<span></span>
-            </label>
-            <label class="checkbox-label" tabindex="0" aria-label="галочка для фильтра Современность">
-              <input class="check" type="checkbox">Современность<span></span>
-            </label>
--->
             <label class="check-label" aria-label="галочка для фильтра XIX век">
               <input class="visually-hidden checkbox" type="checkbox">
               <span class="visible-checkbox"></span>
