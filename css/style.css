@@ -1212,8 +1212,7 @@ body {
 .swiper-button-next--gallery:focus,
 .swiper-button-prev--gallery:focus {
   background-color: var(--dove-gray);
-  /*outline: 2px solid var(--black);*/
-  outline: 2px solid green;
+  outline: 2px solid var(--black);
 }
 
 .swiper-button-next--gallery:active,
