@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, {
             iconLayout: 'default#image',
-            iconImageHref: '../img/icon/subtract.svg',
+            iconImageHref: 'img/icon/subtract.svg',
             iconImageSize: [20, 20],
             iconImageOffset: [-5, -10]
         });
