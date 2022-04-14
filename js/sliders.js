@@ -10,7 +10,6 @@ let swiperHeader = new Swiper(".swiper--header", {
 
 
 let swiperGallery = new Swiper('.swiper--gallery', {
-
     slideLabelMessage: false,
     // Optional parameters
 
@@ -20,6 +19,11 @@ let swiperGallery = new Swiper('.swiper--gallery', {
 
     breakpoints: {
         // when window width is >= ____px
+        625: {
+            slidesPerGroup: 2,
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
         768: {
             slidesPerGroup: 2,
             slidesPerView: 2,
