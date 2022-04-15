@@ -53,7 +53,6 @@
 
           <nav class="header-top__nav nav">
             <div class="nav__burger" id="nav-burger">
-
               <ul class="nav__list ul-reset">
                 <li class="nav__item">
                   <a href="#about" class="nav__link link link--nav scroll-link" aria-label="О нас">О
@@ -75,7 +74,7 @@
                   <a href="#contacts" class="nav__link link link--nav scroll-link" aria-label="Контакты">Контакты</a>
                 </li>
               </ul>
-              <a href="#" class="burger-menu__login link link--login" aria-label="Войти">
+              <a href="#" class="nav__login link link--login" aria-label="Войти">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
@@ -92,8 +91,6 @@
               </span>
             </button>
           </nav>
-
-
           <a href="#" class="header-top__login link link--login" aria-label="Войти">
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -309,39 +306,6 @@
             <div class="swiper-button-prev swiper-button-prev--gallery"></div>
             <div class="swiper-pagination swiper-pagination-gallery swiper-pagination-fraction-gallery"></div>
             <div class="swiper-button-next swiper-button-next--gallery"></div>
-          </div>
-
-          <div class="modal-overlay">
-            <div class="modal modal--1" data-target="default-popup">
-              <picture>
-                <source srcset="img/gallery/modal-img/modal-img-320.jpg" media="(max-width: 767px)">
-                <source srcset="img/gallery/modal-img/modal-img-768.jpg" media="(max-width: 1023px)">
-                <source srcset="img/gallery/modal-img/modal-img-1024.jpg" media="(max-width: 1024px)">
-                <img class="img img--modal" src="img/gallery/modal-img/modal-img-1920.jpg" alt="Женщина с граблями">
-              </picture>
-              <div class="modal__description">
-                <h3 class="modal__title title title--small">Казимир Малевич</h3>
-                <span class="modal__name-work">
-                  “Женщина с граблями”
-                </span>
-                <span class="modal__subtitle subtitle subtitle--small">
-                  1931-1932”
-                </span>
-                <p class="p-reset">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
-                  принялся за её
-                  создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской
-                  выставок в 1927 году.</p>
-              </div>
-              <button class="modal__btn btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z"
-                    fill="black" />
-                </svg>
-              </button>
-            </div>
           </div>
 
           <div>
@@ -1047,6 +1011,39 @@
       </ul>
     </div>
   </footer>
+
+  <div class="modal-overlay">
+    <div class="modal modal--1" data-target="default-popup">
+      <picture>
+        <source srcset="img/gallery/modal-img/modal-img-320.jpg" media="(max-width: 767px)">
+        <source srcset="img/gallery/modal-img/modal-img-768.jpg" media="(max-width: 1023px)">
+        <source srcset="img/gallery/modal-img/modal-img-1024.jpg" media="(max-width: 1024px)">
+        <img class="img img--modal" src="img/gallery/modal-img/modal-img-1920.jpg" alt="Женщина с граблями">
+      </picture>
+      <div class="modal__description">
+        <h3 class="modal__title title title--small">Казимир Малевич</h3>
+        <span class="modal__name-work">
+          “Женщина с граблями”
+        </span>
+        <span class="modal__subtitle subtitle subtitle--small">
+          1931-1932”
+        </span>
+        <p class="p-reset">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+          принялся за её
+          создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской
+          выставок в 1927 году.</p>
+      </div>
+      <button class="modal__btn btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.666695 -0.000125032L15.3334 15.3041L14.6667 15.9998L2.70967e-05 0.695522L0.666695 -0.000125032Z"
+            fill="black" />
+        </svg>
+      </button>
+    </div>
+  </div>
 
   <script src="js/burger-menu.js"></script>
   <script src="js/tabs.js"></script>
