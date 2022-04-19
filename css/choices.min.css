@@ -203,7 +203,7 @@
 
 .choices__list--single .choices__item {
   width: 100%;
-  padding: 3px 15px 6px;
+  padding: 6px 15px;
 }
 
 .choices__list--multiple {
@@ -318,7 +318,7 @@
   }
 
   .choices__list--single .choices__item {
-    padding: 2px 15px 4px;
+    padding: 4px 15px;
   }
 
   .choices__list--dropdown {
